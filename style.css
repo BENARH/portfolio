@@ -1,6 +1,10 @@
+/* Smooth scrolling */
+
 html{
 scroll-behavior:smooth;
 }
+
+/* GENERAL PAGE STYLE */
 
 body{
 font-family:'Segoe UI',Arial,sans-serif;
@@ -9,7 +13,7 @@ padding:0;
 color:#333;
 }
 
-/* PAGE BACKGROUNDS */
+/* DIFFERENT PAGE BACKGROUNDS */
 
 .home-page{
 background:linear-gradient(135deg,#c2e9fb,#a1c4fd);
@@ -38,6 +42,12 @@ margin:0;
 font-size:2.4em;
 }
 
+.tagline{
+margin-top:5px;
+font-size:1.1em;
+opacity:0.9;
+}
+
 /* NAVIGATION */
 
 nav{
@@ -60,12 +70,60 @@ background:white;
 color:#1a73e8;
 }
 
-/* MAIN */
+/* MAIN CONTENT */
 
 main{
 max-width:900px;
 margin:40px auto;
 padding:0 20px;
+}
+
+/* HERO SECTION (HOME PAGE) */
+
+.hero{
+background:white;
+padding:40px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 6px 25px rgba(0,0,0,0.1);
+margin-bottom:30px;
+}
+
+/* BUTTONS */
+
+.hero-buttons{
+margin-top:20px;
+}
+
+.btn{
+background:#1a73e8;
+color:white;
+padding:12px 20px;
+border-radius:8px;
+text-decoration:none;
+margin:10px;
+display:inline-block;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#0d5bd3;
+}
+
+.btn-outline{
+border:2px solid #1a73e8;
+color:#1a73e8;
+padding:10px 18px;
+border-radius:8px;
+text-decoration:none;
+margin:10px;
+display:inline-block;
+transition:0.3s;
+}
+
+.btn-outline:hover{
+background:#1a73e8;
+color:white;
 }
 
 /* PROFILE SECTION */
@@ -79,7 +137,54 @@ box-shadow:0 6px 25px rgba(0,0,0,0.1);
 margin-bottom:30px;
 }
 
-/* IMAGE GALLERY */
+/* CARDS */
+
+.cards{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+margin-bottom:30px;
+}
+
+.card{
+background:white;
+border-radius:12px;
+padding:25px;
+width:220px;
+text-align:center;
+text-decoration:none;
+color:#1a73e8;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:#1a73e8;
+color:white;
+}
+
+/* QUICK INFO */
+
+.quick-info{
+background:white;
+border-radius:12px;
+padding:25px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+margin-bottom:30px;
+}
+
+.quick-info ul{
+list-style:none;
+padding:0;
+}
+
+.quick-info li{
+margin:10px 0;
+}
+
+/* IMAGE GALLERY (ABOUT PAGE) */
 
 .gallery{
 background:white;
@@ -122,6 +227,12 @@ line-height:1.5;
 color:#444;
 }
 
+/* LINKS */
+
+a{
+color:#1a73e8;
+}
+
 /* FOOTER */
 
 footer{
@@ -140,8 +251,17 @@ h1{
 font-size:1.8em;
 }
 
+.cards{
+flex-direction:column;
+align-items:center;
+}
+
 main{
 padding:10px;
+}
+
+.hero{
+padding:25px;
 }
 
 }
